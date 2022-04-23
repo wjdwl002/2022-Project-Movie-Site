@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Button from '../components/Button'
-import styles from '../assets/styles/App.module.css'
+import styles from '../assets/styles/App.module.scss'
 import { useState, useEffect } from 'react'
 
 // eslint-disable-next-line require-jsdoc
@@ -42,7 +42,12 @@ function Lab() {
   return (
     <div className={styles.app}>
       <div className={styles.title}>Hi</div>
-      <input type="text" value={keyword} onChange={onChange} placeholder="search" />
+      <input
+        type="text"
+        value={keyword}
+        onChange={onChange}
+        placeholder="search"
+      />
       <h1>{counter}</h1>
       <button onClick={onClick}>hi</button>
       <hr style={{ width: '100%' }} />
