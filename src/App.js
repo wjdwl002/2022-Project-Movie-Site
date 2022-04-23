@@ -1,12 +1,13 @@
-import Button from './components/Button'
+/* eslint-disable */
+import Button from './components/Button';
+import styles from './assets/styles/App.module.css';
 
+// eslint-disable-next-line require-jsdoc
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Button
-         text={'hi'}/>
-      </header>
+      <div className={styles.title}>Hi</div>
+      <Button text="hi" />
     </div>
   );
 }
